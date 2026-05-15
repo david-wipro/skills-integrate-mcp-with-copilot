@@ -16,8 +16,11 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
@@ -26,6 +29,29 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+header .site-title {
+  text-align: left;
+}
+
+#auth-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#auth-button {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#auth-button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 main {
@@ -186,6 +212,21 @@ button:hover {
   background-color: #d1ecf1;
   color: #0c5460;
   border: 1px solid #bee5eb;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#login-section {
+  margin-bottom: 20px;
+}
+
+#login-section .form-group {
+  margin-bottom: 12px;
+}
+
+#login-section button {
+  margin-top: 8px;
 }
 
 .hidden {
